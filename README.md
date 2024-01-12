@@ -1,6 +1,6 @@
-# KMP Gradle Skeleton 
+# KMP Shared Resource
 
-This is a Kotlin Multiplatform project targeting Android, iOS.
+This is a Kotlin Multiplatform project targeting Android, iOS using [Moko Resource](https://github.com/icerockdev/moko-resources/tree/master)
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
@@ -16,4 +16,4 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
   The most important subfolder is `commonMain`. If preferred, you can add code to the platform-specific folders here too.
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)
