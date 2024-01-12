@@ -2,7 +2,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -10,10 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.painterResource
+import com.santimattius.kmp.skeleton.shared.MR
+import dev.icerock.moko.resources.compose.painterResource
 
-@OptIn(ExperimentalResourceApi::class)
+
 @Composable
 fun App() {
     MaterialTheme {
@@ -24,7 +23,7 @@ fun App() {
         ) {
             Image(
                 modifier = Modifier.size(100.dp),
-                painter = painterResource("compose-multiplatform.xml"),
+                painter = painterResource(MR.images.compose_logo),
                 contentDescription = null
             )
             Text("Compose: ${Greeting().greet()}")
